@@ -1,4 +1,4 @@
-OUTPUT=stdout
+OUTPUT=json
 
 install:
 	pip install --upgrade pip
@@ -10,4 +10,4 @@ part1:
 
 part2:
 	docker build -t mydocker .
-	docker run -it mydocker -o ${OUTPUT} -u “https://news.ycombinator.com”
+	docker run -it mydocker -o ${OUTPUT} -u https://news.ycombinator.com

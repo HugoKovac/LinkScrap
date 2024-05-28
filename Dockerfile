@@ -14,5 +14,6 @@ WORKDIR /home/dev
 
 RUN make install
 
-ENTRYPOINT python3 main.py
+ENTRYPOINT ["python3", "main.py"]
+CMD []
 
